@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/sun_light_mode"
+            android:title="@string/sun_light_mode"/>
+    <item
+            android:id="@+id/moon_light_mode"
+            android:title="@string/moon_light_mode"/>
+
+</menu>
