@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/name_player_one"
+                android:text="@string/player_one_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/PlayerText"/>
+
+        <ImageView
+                android:id="@+id/decrease_player_one"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/decrease_description"
+                android:background="@drawable/button_background"
+                android:onClick="decreaseScore"
+                app:srcCompat="@drawable/ic_decrease"
+                style="@style/DecreaseButtons"/>
+
+        <TextView
+                android:id="@+id/score_player_one"
+                android:text="@string/default_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                style="@style/ScoreText"/>
+
+        <ImageView
+                android:id="@+id/increase_player_one"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/increase_description"
+                android:background="@drawable/button_background"
+                android:onClick="increaseScore"
+                app:srcCompat="@drawable/ic_increase"
+                style="@style/IncreaseButtons"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/name_player_two"
+                android:text="@string/player_two_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/PlayerText"/>
+
+        <ImageView
+                android:id="@+id/decrease_player_two"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/decrease_description"
+                android:background="@drawable/button_background"
+                android:onClick="decreaseScore"
+                app:srcCompat="@drawable/ic_decrease"
+                style="@style/DecreaseButtons"/>
+
+        <TextView
+                android:id="@+id/score_player_two"
+                android:text="@string/default_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                style="@style/ScoreText"/>
+
+        <ImageView
+                android:id="@+id/increase_player_two"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/increase_description"
+                android:background="@drawable/button_background"
+                android:onClick="increaseScore"
+                app:srcCompat="@drawable/ic_increase"
+                style="@style/IncreaseButtons"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
