@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Demo Players</string>
+    <string name="default_score">0</string>
+    <string name="player_one_name_text">James</string>
+    <string name="decrease_description">decrease</string>
+    <string name="increase_description">increase</string>
+    <string name="player_two_name_text">Jason</string>
+    <string name="sun_light_mode">sun light mode</string>
+    <string name="moon_light_mode">moon light mode</string>
+</resources>
